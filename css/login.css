@@ -1,0 +1,233 @@
+body {
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings: "slnt" 0;
+    margin: 0;
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+.container{
+    background-color: #181B24;
+    width: 100vw;
+    height: 100vh;
+    padding: 5rem 8rem;
+}
+
+.le{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.subcontainer{
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+
+.ld{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ld-conteudo{
+    background-color: #F2F2F2;
+    border-radius: 20px;
+    padding: 1.5rem 3rem 3rem 3rem; 
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.titulo{
+    font-size: 1.5rem; 
+    margin-bottom: 3rem;
+    text-align: center;
+}
+
+.input-div{
+    width: 100%;
+    position: relative;
+}
+
+.label{
+    position: absolute;
+    background-color: #F2F2F2;
+    left: 1rem;
+    top: -0.5rem;
+    padding: 0 0.4rem;
+    font-size: 0.75rem;
+    
+}
+
+.inputs{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    font-size: 0.5rem;
+}
+
+.input{
+    width: 100%;
+    padding: 0.8rem;
+    border-radius: 0.3rem;
+    background-color: #F2F2F2;
+}
+
+.password{
+    display: flex;
+    align-items: center;
+}
+
+.password button{
+    position: absolute;
+    border: none;
+    background-color: transparent;
+    right: 0;
+    cursor:pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.esqueceu-senha{
+    width: 100%;
+    margin-top: 1.5rem;
+    display: flex;
+    justify-content: end;
+}
+
+.esqueceu-senha a {
+    color: #105F74;
+    text-decoration: none;
+    font-size: 1rem; 
+    font-weight: bold;
+}
+
+.entrar {
+    margin-top: 2rem;
+    width: 100%;
+}
+
+.entrar button {
+    background-color: #105F74;
+    color: #ffffff;
+    font-size: 1rem;
+    font-weight: bold;
+    text-align: center;
+    border: none; 
+    border-radius: 0.5rem; 
+    padding: 0.9rem 1.25rem; 
+    cursor: pointer; 
+    width: 100%; 
+}
+
+.registrar {
+    margin-top: 1rem;
+}
+
+.registrar a {
+    color: #105F74;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.politicas{
+    margin-top: 3rem;
+    text-align: center;
+}
+
+label {
+    font-size: 1rem;
+    color: #272727;
+}
+
+label a {
+    color: #105F74;
+}
+
+@media (max-width: 768px) {
+    .container {
+        padding: 1rem 2rem 6rem 2rem;
+    }
+
+    .subcontainer {
+        flex-direction: column;
+    }
+
+    .le {
+        width: 100%;
+        margin-bottom: 2rem;
+    }
+
+    .ld {
+        width: 100%;
+    }
+
+    .le img {
+        max-width: 9.3rem;
+        margin-bottom: 2rem;
+    }
+}
+
+@media (max-width: 480px) {
+
+    .subcontainer {
+        flex-direction: column;
+    }
+
+    .ld-conteudo {
+        padding: 1rem 1.5rem;
+    }
+
+    .titulo {
+        font-size: 1.25rem;
+        margin-bottom: 2rem;
+    }
+
+    .input-div {
+        gap: 1rem;
+    }
+
+    .input {
+        padding: 0.6rem;
+    }
+
+    .entrar button {
+        padding: 0.8rem 1rem;
+    }
+
+    .registrar a {
+        font-size: 0.875rem;
+    }
+
+    .password button {
+        right: 0.5rem;
+    }
+
+    .ld{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin-bottom: 1rem;
+    }
+
+    .le img {
+        max-width: 6.2rem;
+    }
+}
+
+
+

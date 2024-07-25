@@ -1,0 +1,216 @@
+body {
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings: "slnt" 0;
+    margin: 0;
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
+    }
+
+.container{
+    background-color: #181B24;
+    width: 100%;
+    height: 100vh;
+    padding: 5rem 8rem;
+}
+
+.subcontainer{
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+
+.le{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.le-conteudo{
+    width: 100%;
+    background-color: #F2F2F2;
+    border-radius: 20px;
+    padding: 1rem 3rem 1.5rem 3rem;  
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.titulo{
+    font-size: 1.5rem; 
+    margin-bottom: 3rem;
+}
+
+.input-div{
+    width: 100%;
+    position: relative;
+}
+
+.label{
+    position: absolute;
+    background-color: #F2F2F2;
+    left: 1rem;
+    top: -0.5rem;
+    padding: 0 0.4rem;
+    font-size: 0.75rem;
+    
+}
+
+.inputs{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    font-size: 0.5rem;
+}
+
+.input{
+    width: 100%;
+    padding: 0.8rem;
+    border-radius: 0.3rem;
+    background-color: #F2F2F2;
+}
+
+.password{
+    display: flex;
+    align-items: center;
+}
+
+.password button{
+    position: absolute;
+    justify-content: end;
+    border: none;
+    background-color: transparent;
+    right: 0;
+}
+
+.politicas{
+    margin-top: 1.5rem;
+}
+
+label {
+    font-size: 1rem;
+    color: #272727;
+}
+
+label a {
+    color: #105F74;
+}
+
+.cadastrar {
+    margin-top: 2rem;
+    width: 100%;
+}
+
+.cadastrar button {
+    background-color: #105F74;
+    color: #ffffff;
+    font-size: 1rem;
+    font-weight: bold;
+    text-align: center;
+    border: none; 
+    border-radius: 0.5rem; 
+    padding: 0.9rem 1.25rem; 
+    cursor: pointer; 
+    width: 100%; 
+}
+
+.login {
+    margin-top: 1rem;
+}
+
+.login a {
+    color: #105F74;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.ld{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+}
+
+@media (max-width: 768px) {
+    .container {
+        padding: 2rem;
+    }
+
+    .subcontainer {
+        flex-direction: column-reverse;
+    }
+
+    .le {
+        width: 100%;
+        margin-bottom: 2rem;
+    }
+
+    .ld {
+        width: 100%;
+    }
+
+    .ld img {
+        max-width: 9.3rem;
+        margin-bottom: 2rem;
+    }
+}
+
+@media (max-width: 480px) {
+
+    .subcontainer {
+        flex-direction: column-reverse;
+    }
+
+    .le-conteudo {
+        padding: 1rem 1.5rem;
+    }
+
+    .titulo {
+        font-size: 1.25rem;
+        margin-bottom: 2rem;
+    }
+
+    .input-div {
+        gap: 1rem;
+    }
+
+    .input {
+        padding: 0.6rem;
+    }
+
+    .cadastrar button {
+        padding: 0.8rem 1rem;
+    }
+
+    .login a {
+        font-size: 0.875rem;
+    }
+
+    .password button {
+        right: 0.5rem;
+    }
+
+    .ld{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin-bottom: 1rem;
+    }
+
+    .ld img {
+        max-width: 6.2rem;
+    }
+}
+
+
+
+

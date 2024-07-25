@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TTwitter</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/login.css">
+    <script src="../js/comum.js"></script>
+    <script src="../js/login.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="subcontainer">
+            <div class="le">
+                <img src="../img/LogoTT.svg" alt="Logo">
+            </div>
+            <div class="ld">
+                <div class="ld-conteudo">
+                    <h1 class="titulo">Bem vindo a plataforma TTwitter</h1>
+                    <div class="inputs">
+                        <div class="input-div">
+                            <label class="label">Email</label>
+                            <input id="email" class="input" type="email" placeholder="example@gmail.com">
+                        </div>
+                        <div class="input-div">
+                            <label class="label">Senha</label>
+                            <div class="password">
+                                <input id="senha" class="input" type="password" placeholder="•••••••••">
+                                <button type="button"><img onclick="alternaExibirSenha(getObj('senha'))"
+                                        src="../img/Visibility.svg" alt="Visibility">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="esqueceu-senha">
+                        <a href="javascript:alert('Não implementado!')">Esqueci minha senha</a>
+                    </div>
+                    <div class="entrar">
+                        <!--a href="../html/home.html"--><button onclick="entrar()" type="button">Entrar</button><!--/a-->
+                    </div>
+                    <div class="registrar">
+                        <a href="../html/cadastro.html">Registrar</a>
+                    </div>
+                    <div class="politicas">
+                        <label>Li e estou de acordo com os <a href="javascript:alert('Não implementado!')">Termos</a> e <a
+                                href="javascript:alert('Não implementado!')">Condições de uso</a>.</label>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

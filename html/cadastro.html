@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TTwitter</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/cadastro.css">
+    <script src="../js/comum.js"></script>
+    <script src="../js/cadastro.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="subcontainer">
+            <div class="le">
+                <div class="le-conteudo">
+                    <h1 class="titulo">Cadastro</h1>
+                    <div class="inputs">
+                        <div class="input-div">
+                            <label class="label">Nome</label>
+                            <input id="nome" class="input" type="text" placeholder="nome de usuário">
+                        </div>
+                        <div class="input-div">
+                            <label class="label">Email</label>
+                            <input id="email" class="input" type="email" placeholder="example@gmail.com">
+                        </div>
+                        <div class="input-div">
+                            <label class="label">Data de nascimento</label>
+                            <input id="dtNascimento" class="input" type="date" placeholder="xx/xx/xxxx">
+                        </div>
+                        <div class="input-div">
+                            <label class="label">Senha</label>
+                            <div class="password">
+                                <input id="senha1" class="input" type="password" placeholder="•••••••••">
+                                <button type="button"><img onclick="alternaExibirSenha(getObj('senha1'))" src="../img/Visibility.svg" alt="Mostrar senha"></button>
+                            </div>
+                        </div>
+                        <div class="input-div">
+                            <label class="label">Confirmar senha</label>
+                            <div class="password">
+                                <input id="senha2" class="input" type="password" placeholder="•••••••••">
+                                <button type="button"><img onclick="alternaExibirSenha(getObj('senha2'))" src="../img/Visibility.svg" alt="Mostrar senha"></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="politicas">
+                        <input id="termo" type="checkbox">
+                        <label>Li e estou de acordo com os <a href="javascript:alert('Não implementado!')">Termos</a> e <a
+                                href="javascript:alert('Não implementado!')">Condições de uso</a>.</label>
+                    </div>
+                    <div class="cadastrar">
+                        <button onclick="cadastrar()" type="button">Cadastrar</button>
+                    </div>
+                    <div class="login">
+                        <a href="../html/login.html">Fazer Login</a>
+                    </div>
+                </div>
+            </div>
+            <div class="ld">
+                <img src="../img/LogoTT.svg" alt="Logo">
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
